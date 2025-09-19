@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	overflow-x: hidden;
+	
 	background-color: #121212;
     font-family: "noto-sans-kr", sans-serif;
     font-weight: 400;
