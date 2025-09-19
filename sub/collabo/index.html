@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COLLBO</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="shortcut icon" href="../../img/dr_ppc.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+   
+    <div class="wrap">
+
+       <header>
+      <div class="pc_header">
+        <div class="show_menu">
+          <ul class="menu_wrap">
+            <li class="men">
+              <div class="show"><a href="../../sub/men/index.html">MEN</a></div>
+              <div class="hide_menu">
+                <ul class="hide_list">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#">Best</a></li>
+                  <li><a href="#">슈즈</a></li>
+                  <li><a href="#">샌들</a></li>
+                  <li><a href="#">부츠</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="women">
+              <div class="show"><a href="#">WOMEN</a></div>
+              <div class="hide_menu">
+                <ul class="hide_list">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#">Best</a></li>
+                  <li><a href="#">슈즈</a></li>
+                  <li><a href="#">샌들</a></li>
+                  <li><a href="#">부츠</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="kids">
+              <div class="show"><a href="#">KIDS</a></div>
+              <div class="hide_menu">
+                <ul class="hide_list">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#">토틀러</a></li>
+                  <li><a href="#">주니어</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="acc">
+              <div class="show"><a href="#">ACC</a></div>
+              <div class="hide_menu">
+                <ul class="hide_list">
+                  <li><a href="#">All</a></li>
+                  <li><a href="#">가방</a></li>
+                  <li><a href="#">양말</a></li>
+                  <li><a href="#">신발용품</a></li>
+                  <li><a href="#">악세서리</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="martens">
+              <div class="show">
+                <a href="../../sub/martens/index.html">MARTENS</a>
+              </div>
+              <div class="hide_menu">
+                <ul class="hide_list">
+                  <li><a href="#">1461 슈즈</a></li>
+                  <li><a href="#">아드리안</a></li>
+                  <li><a href="#">메리제인</a></li>
+                  <li><a href="#">1460 부츠</a></li>
+                  <li><a href="#">샌들</a></li>
+                  <li><a href="#">뮬</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="event">
+              <div class="show"><a href="#">EVENT</a></div>
+              <div class="hide_menu">
+                <ul class="hide_list">
+                  <li><a href="#">New</a></li>
+                  <li><a href="collabo/index.html">Collabo</a></li>
+                  <li><a href="../../sub/sale/index.html">Sale</a></li>
+                  <li><a href="#">How to</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <div class="hide_back"></div>
+
+          <div class="logo">
+            <a href="../../index.html"
+              ><img src="img/header/header_logo.png" alt="닥터마틴로고"
+            /></a>
+          </div>
+
+          <div class="side_menu">
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <h6>search</h6>
+            </div>
+            <div class="login">
+              <a href="#">
+                <svg
+                  width="30"
+                  height="29"
+                  viewBox="0 0 30 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 4C13.9012 4 12.8271 4.32411 11.9135 4.93135C10.9999 5.53859 10.2878 6.40168 9.86734 7.41149C9.44685 8.42129 9.33683 9.53245 9.55119 10.6044C9.76556 11.6764 10.2947 12.6611 11.0716 13.434C11.8486 14.2069 12.8385 14.7332 13.9162 14.9464C14.9938 15.1597 16.1109 15.0502 17.126 14.632C18.1412 14.2137 19.0088 13.5054 19.6193 12.5966C20.2297 11.6878 20.5556 10.6193 20.5556 9.52632C20.5556 8.06065 19.9702 6.65501 18.9284 5.61862C17.8865 4.58224 16.4734 4 15 4ZM15 12.8421C14.3407 12.8421 13.6963 12.6476 13.1481 12.2833C12.5999 11.919 12.1727 11.4011 11.9204 10.7952C11.6681 10.1893 11.6021 9.52264 11.7307 8.87944C11.8593 8.23624 12.1768 7.64542 12.643 7.1817C13.1092 6.71798 13.7031 6.40218 14.3497 6.27424C14.9963 6.1463 15.6665 6.21196 16.2756 6.46293C16.8847 6.71389 17.4053 7.13888 17.7716 7.68416C18.1378 8.22944 18.3333 8.87051 18.3333 9.52632C18.3333 10.4057 17.9821 11.2491 17.357 11.8709C16.7319 12.4928 15.8841 12.8421 15 12.8421ZM25 25V23.8947C25 21.8428 24.1806 19.8749 22.7219 18.424C21.2633 16.973 19.285 16.1579 17.2222 16.1579H12.7778C10.715 16.1579 8.73667 16.973 7.27806 18.424C5.81944 19.8749 5 21.8428 5 23.8947V25H7.22222V23.8947C7.22222 22.4291 7.80754 21.0234 8.84941 19.987C9.89128 18.9507 11.3044 18.3684 12.7778 18.3684H17.2222C18.6956 18.3684 20.1087 18.9507 21.1506 19.987C22.1925 21.0234 22.7778 22.4291 22.7778 23.8947V25H25Z"
+                    fill="#F3F3F3"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="cart">
+              <a href="#">
+                <svg
+                  width="30"
+                  height="29"
+                  viewBox="0 0 30 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 4H7.764L8.309 6H26.387L22.721 17H10.78L10.28 19H25V21H7.72L8.966 16.011L6.236 6H3V4ZM10.764 15H21.279L23.613 8H8.855L10.764 15ZM7 24C7 23.4696 7.21071 22.9609 7.58579 22.5858C7.96086 22.2107 8.46957 22 9 22C9.53043 22 10.0391 22.2107 10.4142 22.5858C10.7893 22.9609 11 23.4696 11 24C11 24.5304 10.7893 25.0391 10.4142 25.4142C10.0391 25.7893 9.53043 26 9 26C8.46957 26 7.96086 25.7893 7.58579 25.4142C7.21071 25.0391 7 24.5304 7 24ZM21 24C21 23.4696 21.2107 22.9609 21.5858 22.5858C21.9609 22.2107 22.4696 22 23 22C23.5304 22 24.0391 22.2107 24.4142 22.5858C24.7893 22.9609 25 23.4696 25 24C25 24.5304 24.7893 25.0391 24.4142 25.4142C24.0391 25.7893 23.5304 26 23 26C22.4696 26 21.9609 25.7893 21.5858 25.4142C21.2107 25.0391 21 24.5304 21 24Z"
+                    fill="#F3F3F3"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mob_header">
+        <div class="mob_logo">
+          <a href="../../index.html">
+            <img src="img/header/header_logo.png" alt="닥터마틴 로고" />
+          </a>
+        </div>
+
+        <div class="ham_menu_wrap">
+          <div class="ham">
+            <svg
+              width="31"
+              height="21"
+              viewBox="0 0 31 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.67949 20.1538C1.20364 20.1538 0.80504 19.9926 0.483698 19.6701C0.162356 19.3477 0.00112545 18.9491 5.79133e-06 18.4744C-0.00111387 17.9996 0.160117 17.601 0.483698 17.2786C0.807279 16.9561 1.20588 16.7949 1.67949 16.7949H28.5513C29.0271 16.7949 29.4263 16.9561 29.7488 17.2786C30.0712 17.601 30.2319 17.9996 30.2308 18.4744C30.2296 18.9491 30.0684 19.3482 29.7471 19.6718C29.4257 19.9954 29.0271 20.1561 28.5513 20.1538H1.67949ZM1.67949 11.7564C1.20364 11.7564 0.80504 11.5952 0.483698 11.2727C0.162356 10.9503 0.00112545 10.5517 5.79133e-06 10.0769C-0.00111387 9.60219 0.160117 9.20359 0.483698 8.88113C0.807279 8.55866 1.20588 8.39743 1.67949 8.39743H28.5513C29.0271 8.39743 29.4263 8.55866 29.7488 8.88113C30.0712 9.20359 30.2319 9.60219 30.2308 10.0769C30.2296 10.5517 30.0684 10.9508 29.7471 11.2744C29.4257 11.598 29.0271 11.7586 28.5513 11.7564H1.67949ZM1.67949 3.35897C1.20364 3.35897 0.80504 3.19774 0.483698 2.87528C0.162356 2.55282 0.00112545 2.15422 5.79133e-06 1.67949C-0.00111387 1.20475 0.160117 0.806154 0.483698 0.483692C0.807279 0.161231 1.20588 0 1.67949 0H28.5513C29.0271 0 29.4263 0.161231 29.7488 0.483692C30.0712 0.806154 30.2319 1.20475 30.2308 1.67949C30.2296 2.15422 30.0684 2.55338 29.7471 2.87696C29.4257 3.20054 29.0271 3.36121 28.5513 3.35897H1.67949Z"
+                fill="#F3F3F3"
+                fill-opacity="0.9"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="mob_header_menu">
+            <div class="mob_search">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.2889 22L12.5889 14.3C11.9778 14.7889 11.275 15.1759 10.4806 15.4611C9.68611 15.7463 8.84074 15.8889 7.94445 15.8889C5.72407 15.8889 3.84511 15.1197 2.30756 13.5813C0.770001 12.043 0.000815461 10.164 6.46678e-07 7.94444C-0.000814168 5.72489 0.768371 3.84593 2.30756 2.30756C3.84674 0.769185 5.7257 0 7.94445 0C10.1632 0 12.0426 0.769185 13.5826 2.30756C15.1226 3.84593 15.8913 5.72489 15.8889 7.94444C15.8889 8.84074 15.7463 9.68611 15.4611 10.4806C15.1759 11.275 14.7889 11.9778 14.3 12.5889L22 20.2889L20.2889 22ZM7.94445 13.4444C9.47222 13.4444 10.771 12.9099 11.8409 11.8409C12.9107 10.7719 13.4453 9.47304 13.4444 7.94444C13.4436 6.41585 12.9091 5.11744 11.8409 4.04922C10.7727 2.981 9.47385 2.44607 7.94445 2.44444C6.41504 2.44281 5.11663 2.97774 4.04922 4.04922C2.98182 5.1207 2.44689 6.41911 2.44444 7.94444C2.442 9.46978 2.97693 10.7686 4.04922 11.8409C5.12152 12.9132 6.41993 13.4477 7.94445 13.4444Z"
+                  fill="#F3F3F3"
+                ></path>
+              </svg>
+            </div>
+            <div class="mob_login">
+              <a href="#">
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 0C8.90121 0 7.82711 0.324113 6.9135 0.931352C5.99989 1.53859 5.28782 2.40168 4.86734 3.41149C4.44685 4.42129 4.33683 5.53245 4.55119 6.60445C4.76556 7.67645 5.29467 8.66114 6.07163 9.43401C6.84859 10.2069 7.83849 10.7332 8.91617 10.9464C9.99384 11.1597 11.1109 11.0502 12.126 10.632C13.1412 10.2137 14.0088 9.50537 14.6193 8.59657C15.2297 7.68777 15.5556 6.61932 15.5556 5.52632C15.5556 4.06065 14.9702 2.65501 13.9284 1.61862C12.8865 0.582235 11.4734 0 10 0ZM10 8.8421C9.34073 8.8421 8.69626 8.64764 8.1481 8.28329C7.59994 7.91895 7.17269 7.40109 6.9204 6.79521C6.66811 6.18933 6.6021 5.52264 6.73072 4.87944C6.85933 4.23624 7.1768 3.64542 7.64298 3.1817C8.10915 2.71798 8.7031 2.40218 9.3497 2.27424C9.9963 2.1463 10.6665 2.21196 11.2756 2.46293C11.8847 2.71389 12.4053 3.13888 12.7716 3.68416C13.1378 4.22944 13.3333 4.87051 13.3333 5.52632C13.3333 6.40572 12.9821 7.2491 12.357 7.87093C11.7319 8.49276 10.8841 8.8421 10 8.8421ZM20 21V19.8947C20 17.8428 19.1806 15.8749 17.7219 14.424C16.2633 12.973 14.285 12.1579 12.2222 12.1579H7.77778C5.71498 12.1579 3.73667 12.973 2.27806 14.424C0.819442 15.8749 0 17.8428 0 19.8947V21H2.22222V19.8947C2.22222 18.4291 2.80754 17.0234 3.84941 15.987C4.89128 14.9507 6.30435 14.3684 7.77778 14.3684H12.2222C13.6956 14.3684 15.1087 14.9507 16.1506 15.987C17.1925 17.0234 17.7778 18.4291 17.7778 19.8947V21H20Z"
+                    fill="#F3F3F3"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="mob_cart">
+              <a href="#">
+                <svg
+                  width="24"
+                  height="22"
+                  viewBox="0 0 24 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0H4.764L5.309 2H23.387L19.721 13H7.78L7.28 15H22V17H4.72L5.966 12.011L3.236 2H0V0ZM7.764 11H18.279L20.613 4H5.855L7.764 11ZM4 20C4 19.4696 4.21071 18.9609 4.58579 18.5858C4.96086 18.2107 5.46957 18 6 18C6.53043 18 7.03914 18.2107 7.41421 18.5858C7.78929 18.9609 8 19.4696 8 20C8 20.5304 7.78929 21.0391 7.41421 21.4142C7.03914 21.7893 6.53043 22 6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20ZM18 20C18 19.4696 18.2107 18.9609 18.5858 18.5858C18.9609 18.2107 19.4696 18 20 18C20.5304 18 21.0391 18.2107 21.4142 18.5858C21.7893 18.9609 22 19.4696 22 20C22 20.5304 21.7893 21.0391 21.4142 21.4142C21.0391 21.7893 20.5304 22 20 22C19.4696 22 18.9609 21.7893 18.5858 21.4142C18.2107 21.0391 18 20.5304 18 20Z"
+                    fill="#F3F3F3"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="mob_menu_wrap">
+            <div class="exit">
+              <svg
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.733 0.462284C19.5914 0.320389 19.4232 0.207814 19.2381 0.131004C19.0529 0.0541946 18.8544 0.0146579 18.6539 0.0146579C18.4535 0.0146579 18.255 0.0541946 18.0698 0.131004C17.8846 0.207814 17.7164 0.320389 17.5748 0.462284L10.09 7.9318L2.60518 0.446978C2.46347 0.305268 2.29524 0.192858 2.11008 0.116165C1.92493 0.0394728 1.72649 1.49315e-09 1.52608 0C1.32567 -1.49315e-09 1.12723 0.0394728 0.942073 0.116165C0.756921 0.192858 0.588687 0.305268 0.446978 0.446978C0.305268 0.588687 0.192858 0.756921 0.116165 0.942073C0.0394728 1.12723 -1.49315e-09 1.32567 0 1.52608C1.49315e-09 1.72649 0.0394728 1.92493 0.116165 2.11008C0.192858 2.29524 0.305268 2.46347 0.446978 2.60518L7.9318 10.09L0.446978 17.5748C0.305268 17.7165 0.192858 17.8848 0.116165 18.0699C0.0394728 18.2551 0 18.4535 0 18.6539C0 18.8543 0.0394728 19.0528 0.116165 19.2379C0.192858 19.4231 0.305268 19.5913 0.446978 19.733C0.588687 19.8747 0.756921 19.9871 0.942073 20.0638C1.12723 20.1405 1.32567 20.18 1.52608 20.18C1.72649 20.18 1.92493 20.1405 2.11008 20.0638C2.29524 19.9871 2.46347 19.8747 2.60518 19.733L10.09 12.2482L17.5748 19.733C17.7165 19.8747 17.8848 19.9871 18.0699 20.0638C18.2551 20.1405 18.4535 20.18 18.6539 20.18C18.8543 20.18 19.0528 20.1405 19.2379 20.0638C19.4231 19.9871 19.5913 19.8747 19.733 19.733C19.8747 19.5913 19.9871 19.4231 20.0638 19.2379C20.1405 19.0528 20.18 18.8543 20.18 18.6539C20.18 18.4535 20.1405 18.2551 20.0638 18.0699C19.9871 17.8848 19.8747 17.7165 19.733 17.5748L12.2482 10.09L19.733 2.60518C20.3147 2.02354 20.3147 1.04393 19.733 0.462284Z"
+                  fill="#F3F3F3"
+                ></path>
+              </svg>
+            </div>
+
+            <div class="mob_side_menu">
+              <div class="mob_search">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.2889 22L12.5889 14.3C11.9778 14.7889 11.275 15.1759 10.4806 15.4611C9.68611 15.7463 8.84074 15.8889 7.94445 15.8889C5.72407 15.8889 3.84511 15.1197 2.30756 13.5813C0.770001 12.043 0.000815461 10.164 6.46678e-07 7.94444C-0.000814168 5.72489 0.768371 3.84593 2.30756 2.30756C3.84674 0.769185 5.7257 0 7.94445 0C10.1632 0 12.0426 0.769185 13.5826 2.30756C15.1226 3.84593 15.8913 5.72489 15.8889 7.94444C15.8889 8.84074 15.7463 9.68611 15.4611 10.4806C15.1759 11.275 14.7889 11.9778 14.3 12.5889L22 20.2889L20.2889 22ZM7.94445 13.4444C9.47222 13.4444 10.771 12.9099 11.8409 11.8409C12.9107 10.7719 13.4453 9.47304 13.4444 7.94444C13.4436 6.41585 12.9091 5.11744 11.8409 4.04922C10.7727 2.981 9.47385 2.44607 7.94445 2.44444C6.41504 2.44281 5.11663 2.97774 4.04922 4.04922C2.98182 5.1207 2.44689 6.41911 2.44444 7.94444C2.442 9.46978 2.97693 10.7686 4.04922 11.8409C5.12152 12.9132 6.41993 13.4477 7.94445 13.4444Z"
+                    fill="#F3F3F3"
+                  ></path>
+                </svg>
+              </div>
+              <div class="mob_login">
+                <a href="#">
+                  <svg
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 0C8.90121 0 7.82711 0.324113 6.9135 0.931352C5.99989 1.53859 5.28782 2.40168 4.86734 3.41149C4.44685 4.42129 4.33683 5.53245 4.55119 6.60445C4.76556 7.67645 5.29467 8.66114 6.07163 9.43401C6.84859 10.2069 7.83849 10.7332 8.91617 10.9464C9.99384 11.1597 11.1109 11.0502 12.126 10.632C13.1412 10.2137 14.0088 9.50537 14.6193 8.59657C15.2297 7.68777 15.5556 6.61932 15.5556 5.52632C15.5556 4.06065 14.9702 2.65501 13.9284 1.61862C12.8865 0.582235 11.4734 0 10 0ZM10 8.8421C9.34073 8.8421 8.69626 8.64764 8.1481 8.28329C7.59994 7.91895 7.17269 7.40109 6.9204 6.79521C6.66811 6.18933 6.6021 5.52264 6.73072 4.87944C6.85933 4.23624 7.1768 3.64542 7.64298 3.1817C8.10915 2.71798 8.7031 2.40218 9.3497 2.27424C9.9963 2.1463 10.6665 2.21196 11.2756 2.46293C11.8847 2.71389 12.4053 3.13888 12.7716 3.68416C13.1378 4.22944 13.3333 4.87051 13.3333 5.52632C13.3333 6.40572 12.9821 7.2491 12.357 7.87093C11.7319 8.49276 10.8841 8.8421 10 8.8421ZM20 21V19.8947C20 17.8428 19.1806 15.8749 17.7219 14.424C16.2633 12.973 14.285 12.1579 12.2222 12.1579H7.77778C5.71498 12.1579 3.73667 12.973 2.27806 14.424C0.819442 15.8749 0 17.8428 0 19.8947V21H2.22222V19.8947C2.22222 18.4291 2.80754 17.0234 3.84941 15.987C4.89128 14.9507 6.30435 14.3684 7.77778 14.3684H12.2222C13.6956 14.3684 15.1087 14.9507 16.1506 15.987C17.1925 17.0234 17.7778 18.4291 17.7778 19.8947V21H20Z"
+                      fill="#F3F3F3"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="mob_cart">
+                <a href="#">
+                  <svg
+                    width="24"
+                    height="22"
+                    viewBox="0 0 24 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0H4.764L5.309 2H23.387L19.721 13H7.78L7.28 15H22V17H4.72L5.966 12.011L3.236 2H0V0ZM7.764 11H18.279L20.613 4H5.855L7.764 11ZM4 20C4 19.4696 4.21071 18.9609 4.58579 18.5858C4.96086 18.2107 5.46957 18 6 18C6.53043 18 7.03914 18.2107 7.41421 18.5858C7.78929 18.9609 8 19.4696 8 20C8 20.5304 7.78929 21.0391 7.41421 21.4142C7.03914 21.7893 6.53043 22 6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20ZM18 20C18 19.4696 18.2107 18.9609 18.5858 18.5858C18.9609 18.2107 19.4696 18 20 18C20.5304 18 21.0391 18.2107 21.4142 18.5858C21.7893 18.9609 22 19.4696 22 20C22 20.5304 21.7893 21.0391 21.4142 21.4142C21.0391 21.7893 20.5304 22 20 22C19.4696 22 18.9609 21.7893 18.5858 21.4142C18.2107 21.0391 18 20.5304 18 20Z"
+                      fill="#F3F3F3"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="mob_menu">
+              <div class="mob_menu_con">
+                <div class="mob_title">MEN</div>
+                <ul class="mob_list mob_men">
+                  <li class="line_m"></li>
+                  <li class="list_m">
+                    <a href="../../sub/men/index.html">All</a>
+                  </li>
+                  <li class="list_m"><a href="#">Best</a></li>
+                  <li class="list_m"><a href="#">슈즈</a></li>
+                  <li class="list_m"><a href="#">샌들</a></li>
+                  <li class="list_m"><a href="#">부츠</a></li>
+                </ul>
+              </div>
+
+              <div class="mob_menu_con">
+                <div class="mob_title">WOMEN</div>
+                <ul class="mob_list mob_women">
+                  <li class="line_m"></li>
+                  <li class="list_m"><a href="#">All</a></li>
+                  <li class="list_m"><a href="#">Best</a></li>
+                  <li class="list_m"><a href="#">슈즈</a></li>
+                  <li class="list_m"><a href="#">샌들</a></li>
+                  <li class="list_m"><a href="#">부츠</a></li>
+                </ul>
+              </div>
+
+              <div class="mob_menu_con">
+                <div class="mob_title">KIDS</div>
+                <ul class="mob_list mob_kids">
+                  <li class="line_m"></li>
+                  <li class="list_m"><a href="#">All</a></li>
+                  <li class="list_m"><a href="#">주니어</a></li>
+                  <li class="list_m"><a href="#">토틀러</a></li>
+                </ul>
+              </div>
+
+              <div class="mob_menu_con">
+                <div class="mob_title">ACC</div>
+                <ul class="mob_list mob_acc">
+                  <li class="line_m"></li>
+                  <li class="list_m"><a href="#">All</a></li>
+                  <li class="list_m"><a href="#">가방</a></li>
+                  <li class="list_m"><a href="#">양말</a></li>
+                  <li class="list_m"><a href="#">신발용품</a></li>
+                  <li class="list_m"><a href="#">악세서리</a></li>
+                </ul>
+              </div>
+
+              <div class="mob_menu_con">
+                <div class="mob_title"><span class="yellow">MARTENS</span></div>
+                <ul class="mob_list mob_marten">
+                  <li class="line_m"></li>
+                  <li class="list_m">
+                    <a href="../../sub/martens/index.html">All</a>
+                  </li>
+                  <li class="list_m"><a href="#">1461 슈즈</a></li>
+                  <li class="list_m"><a href="#">아드리안</a></li>
+                  <li class="list_m"><a href="#">메리제인</a></li>
+                  <li class="list_m"><a href="#">1460 부츠</a></li>
+                  <li class="list_m"><a href="#">샌들</a></li>
+                  <li class="list_m"><a href="#">뮬</a></li>
+                </ul>
+              </div>
+
+              <div class="mob_menu_con active_menu active_line">
+                <div class="mob_title"><span class="yellow">EVENT</span></div>
+                <ul class="mob_list mob_event">
+                  <li class="line_m"></li>
+                  <li class="list_m"><a href="#">New</a></li>
+                  <li class="list_m"><a href="index.html">Collabo</a></li>
+                  <li class="list_m">
+                    <a href="../../sub/sale/index.html">Sale</a>
+                  </li>
+                  <li class="list_m"><a href="#">How to</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- pc mob header end -->
+
+    <section class="sec_1">
+      <div class="pc_img_wrap">
+        <img src="img/sec_1/main_con.png" alt="mademe shoes" />
+      </div>
+
+      <div class="tab_img_wrap">
+        <img src="img/sec_1/tab_con.png" alt="mademe shoes" />
+      </div>
+      <div class="bg"></div>
+
+      <div class="title_wrap">
+        <h3>DR.MARTENS X MADEME</h3>
+        <p>닥터마틴 X 메이드미 콜라보</p>
+      </div>
+
+      <div class="btn">
+        <a href="#"><h6>VIEW MORE</h6></a>
+      </div>
+    </section>
+    <!-- sec_1 end -->
+
+    <section class="sec_2">
+      <div class="pg_nv">
+        <a href="../../index.html">
+          <svg
+            width="12"
+            height="14"
+            viewBox="0 0 12 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.857143 13.1133H4.02171V7.89562H7.97829V13.1133H11.1429V5.13251L6 1.10844L0.857143 5.13251V13.1133ZM0 14V4.68913L6 0L12 4.68913V14H7.12114V8.78237H4.87886V14H0Z"
+              fill="white"
+              fill-opacity="0.5"
+            />
+          </svg>
+        </a>
+
+        <div class="arrow">
+          <svg
+            width="6"
+            height="10"
+            viewBox="0 0 5 9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.8012 4.99992L0.960104 9L0 8.00016L3.36104 4.5L0 0.999843L0.960104 0L4.8012 4.00008C4.92849 4.13268 5 4.3125 5 4.5C5 4.6875 4.92849 4.86732 4.8012 4.99992Z"
+              fill="white"
+              fill-opacity="0.5"
+            />
+          </svg>
+        </div>
+
+        <a href="index.html"><h3 class="pg_nv_title">COLLACORATIONS</h3></a>
+      </div>
+
+      <h2>Collaborations</h2>
+
+      <div class="filter_wrap">
+        <div class="filter_icon">
+          <a href="#">
+            <svg
+              width="14"
+              height="12"
+              viewBox="0 0 14 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.25 3.53486e-07C4.70693 -0.000278489 4.17714 0.164419 3.73364 0.471395C3.29014 0.77837 2.95477 1.21251 2.77375 1.71399H0V3.42797H2.77375C2.95453 3.92977 3.28977 4.36429 3.73327 4.67165C4.17678 4.979 4.7067 5.14406 5.25 5.14406C5.7933 5.14406 6.32322 4.979 6.76673 4.67165C7.21023 4.36429 7.54547 3.92977 7.72625 3.42797H14V1.71399H7.72625C7.54523 1.21251 7.20986 0.77837 6.76636 0.471395C6.32286 0.164419 5.79307 -0.000278489 5.25 3.53486e-07ZM4.375 2.57098C4.375 2.34369 4.46719 2.12571 4.63128 1.96499C4.79538 1.80428 5.01794 1.71399 5.25 1.71399C5.48206 1.71399 5.70462 1.80428 5.86872 1.96499C6.03281 2.12571 6.125 2.34369 6.125 2.57098C6.125 2.79827 6.03281 3.01625 5.86872 3.17696C5.70462 3.33768 5.48206 3.42797 5.25 3.42797C5.01794 3.42797 4.79538 3.33768 4.63128 3.17696C4.46719 3.01625 4.375 2.79827 4.375 2.57098ZM8.75 6.85594C8.20693 6.85566 7.67714 7.02036 7.23364 7.32734C6.79014 7.63431 6.45477 8.06845 6.27375 8.56993H0V10.2839H6.27375C6.45453 10.7857 6.78977 11.2202 7.23327 11.5276C7.67678 11.8349 8.2067 12 8.75 12C9.2933 12 9.82322 11.8349 10.2667 11.5276C10.7102 11.2202 11.0455 10.7857 11.2262 10.2839H14V8.56993H11.2262C11.0452 8.06845 10.7099 7.63431 10.2664 7.32734C9.82286 7.02036 9.29307 6.85566 8.75 6.85594ZM7.875 9.42692C7.875 9.19963 7.96719 8.98165 8.13128 8.82094C8.29538 8.66022 8.51794 8.56993 8.75 8.56993C8.98206 8.56993 9.20462 8.66022 9.36872 8.82094C9.53281 8.98165 9.625 9.19963 9.625 9.42692C9.625 9.65421 9.53281 9.87219 9.36872 10.0329C9.20462 10.1936 8.98206 10.2839 8.75 10.2839C8.51794 10.2839 8.29538 10.1936 8.13128 10.0329C7.96719 9.87219 7.875 9.65421 7.875 9.42692Z"
+                fill="#FFA600"
+                fill-opacity="0.7"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <h4>필터 및 정렬</h4>
+      </div>
+
+      <div class="sec_2_wrap">
+        <div class="con_wrap">
+          <div class="main_con">
+            <a href="#">
+              <img src="img/sec_2/main_con_1.png" alt="MM6" />
+            </a>
+          </div>
+
+          <h4 class="con_title">닥터마틴 X <span>MM6</span></h4>
+
+          <div class="sub_con_wrap">
+            <div class="sub_con con_1_1">
+              <a href="#">
+                <img src="img/sec_2/sub_con_1_1.png" alt="MM6" />
+
+                <div class="hover_con hover_con_1_1">
+                  <img src="img/sec_2/hover_con_1_1.png" alt="MM6" />
+                </div>
+              </a>
+            </div>
+
+            <div class="sub_con con_1_2">
+              <a href="#">
+                <img src="img/sec_2/sub_con_1_2.png" alt="MM6" />
+
+                <div class="hover_con hover_con_1_2">
+                  <img src="img/sec_2/hover_con_1_2.png" alt="MM6" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="con_wrap">
+          <div class="main_con">
+            <a href="#">
+              <img src="img/sec_2/main_con_2.png" alt="NOMARHYTHM TEXTILE" />
+            </a>
+          </div>
+
+          <h4 class="con_title">닥터마틴 X <span>NOMARHYTHM TEXTILE</span></h4>
+
+          <div class="sub_con_wrap">
+            <div class="sub_con con_2_1">
+              <a href="#">
+                <img src="img/sec_2/sub_con_2_1.png" alt="NOMARHYTHM TEXTILE" />
+
+                <div class="hover_con hover_con_2_1">
+                  <img
+                    src="img/sec_2/hover_con_2_1.png"
+                    alt="NOMARHYTHM TEXTILE"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <div class="sub_con con_2_2">
+              <a href="#">
+                <img src="img/sec_2/sub_con_2_2.png" alt="NOMARHYTHM TEXTILE" />
+
+                <div class="hover_con hover_con_2_2">
+                  <img
+                    src="img/sec_2/hover_con_2_2.png"
+                    alt="NOMARHYTHM TEXTILE"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="con_wrap">
+          <div class="main_con">
+            <a href="#">
+              <img src="img/sec_2/main_con_3.png" alt="MADEME" />
+            </a>
+          </div>
+
+          <h4 class="con_title">닥터마틴 X <span>MADEME</span></h4>
+
+          <div class="sub_con_wrap">
+            <div class="sub_con con_3_1">
+              <a href="#">
+                <img src="img/sec_2/sub_con_3_1.png" alt="MADEME" />
+
+                <div class="hover_con hover_con_3_1">
+                  <img src="img/sec_2/hover_con_3_1.png" alt="MADEME" />
+                </div>
+              </a>
+            </div>
+
+            <div class="sub_con con_3_2">
+              <a href="#">
+                <img src="img/sec_2/sub_con_3_2.png" alt="MADEME" />
+
+                <div class="hover_con hover_con_3_2">
+                  <img src="img/sec_2/hover_con_3_2.png" alt="MADEME" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="con_wrap swiper_con_wrap">
+          <div class="main_con">
+            <a href="#">
+              <img src="img/sec_2/main_con_4.png" alt="SUPREME" />
+            </a>
+          </div>
+
+          <h4 class="con_title">닥터마틴 X <span>SUPREME</span></h4>
+
+          <div class="sub_con_wrap sub_con_wrap_4_none">
+            <div class="sub_con con_4_1">
+              <a href="#">
+                <img src="img/sec_2/sub_con_4_1.png" alt="마르지엘라" />
+
+                <div class="hover_con hover_con_4_1">
+                  <img src="img/sec_2/hover_con_4_1.png" alt="마르지엘라" />
+                </div>
+              </a>
+            </div>
+
+            <div class="sub_con con_4_2">
+              <a href="#">
+                <img src="img/sec_2/sub_con_4_2.png" alt="마르지엘라" />
+
+                <div class="hover_con hover_con_4_2">
+                  <img src="img/sec_2/hover_con_4_2.png" alt="마르지엘라" />
+                </div>
+              </a>
+            </div>
+
+            <div class="sub_con con_4_3">
+              <a href="#">
+                <img src="img/sec_2/sub_con_4_3.png" alt="마르지엘라" />
+
+                <div class="hover_con hover_con_4_3">
+                  <img src="img/sec_2/hover_con_4_3.png" alt="마르지엘라" />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper tab_sub_con_wrap">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/sec_2/sub_con_4_1.png" alt="마르지엘라" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/sec_2/sub_con_4_2.png" alt="마르지엘라" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/sec_2/sub_con_4_3.png" alt="마르지엘라" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="con_wrap con_wrap_none">
+          <div class="main_con">
+            <a href="#">
+              <img src="img/sec_2/main_con_5.png" alt="PALACE" />
+            </a>
+          </div>
+
+          <h4 class="con_title">닥터마틴 X <span>PALACE</span></h4>
+
+          <div class="sub_con_wrap">
+            <div class="sub_con con_5_1">
+              <a href="#">
+                <img src="img/sec_2/sub_con_5_1.png" alt="PALACE" />
+
+                <div class="hover_con hover_con_5_1">
+                  <img src="img/sec_2/hover_con_5_1.png" alt="PALACE" />
+                </div>
+              </a>
+            </div>
+
+            <div class="sub_con con_5_2">
+              <a href="#">
+                <img src="img/sec_2/sub_con_5_2.png" alt="PALACE" />
+
+                <div class="hover_con hover_con_5_2">
+                  <img src="img/sec_2/hover_con_5_2.png" alt="PALACE" />
+                </div>
+              </a>
+            </div>
+
+            <div class="sub_con con_5_3">
+              <a href="#">
+                <img src="img/sec_2/sub_con_5_3.png" alt="PALACE" />
+
+                <div class="hover_con hover_con_5_3">
+                  <img src="img/sec_2/hover_con_5_3.png" alt="PALACE" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="con_wrap con_wrap_none">
+          <div class="main_con">
+            <a href="#">
+              <img src="img/sec_2/main_con_6.png" alt="VT21" />
+            </a>
+          </div>
+
+          <h4 class="con_title">닥터마틴 X <span>VT21</span></h4>
+
+          <div class="sub_con_wrap">
+            <div class="sub_con con_6_1">
+              <a href="#">
+                <img src="img/sec_2/sub_con_6_1.png" alt="VT21 SHOES" />
+
+                <div class="hover_con hover_con_6_1">
+                  <img src="img/sec_2/hover_con_6_1.png" alt="VT21 SHOES" />
+                </div>
+              </a>
+            </div>
+
+            <div class="sub_con con_6_2">
+              <a href="#">
+                <img src="img/sec_2/sub_con_6_2.png" alt="VT21 SHOES" />
+
+                <div class="hover_con hover_con_6_2">
+                  <img src="img/sec_2/hover_con_6_2.png" alt="VT21 SHOES" />
+                </div>
+              </a>
+            </div>
+
+            <div class="sub_con con_6_3">
+              <a href="#">
+                <img src="img/sec_2/sub_con_6_3.png" alt="VT21 SHOES" />
+
+                <div class="hover_con hover_con_6_3">
+                  <img src="img/sec_2/hover_con_6_3.png" alt="VT21 SHOES" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pg">
+        <div class="pg_bar pg_bar_1"></div>
+        <div class="pg_bar pg_bar_1"></div>
+        <div class="pg_bar pg_bar_2"></div>
+        <div class="pg_bar pg_bar_3"></div>
+      </div>
+    </section>
+    <!-- sec_2 end -->
+
+    <footer>
+      <div class="footer_line">
+        <svg
+          width="1919"
+          height="6"
+          viewBox="0 0 1919 6"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            y1="3"
+            x2="1919"
+            y2="3"
+            stroke="#F3F3F3"
+            stroke-opacity="0.1"
+            stroke-width="6"
+            stroke-dasharray="20 20"
+          />
+        </svg>
+      </div>
+
+      <div class="logo_f">
+        <a href="../../index.html">
+          <img src="img/footer/footer_logo.png" alt="footer_logo" />
+        </a>
+      </div>
+
+      <div class="footer_line">
+        <svg
+          width="1919"
+          height="6"
+          viewBox="0 0 1919 6"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            y1="3"
+            x2="1919"
+            y2="3"
+            stroke="#F3F3F3"
+            stroke-opacity="0.1"
+            stroke-width="6"
+            stroke-dasharray="20 20"
+          />
+        </svg>
+      </div>
+
+      <div class="f_title">
+        <h6>“ With Bouncing Soles ”</h6>
+      </div>
+
+      <ul class="f_icon_wrap">
+        <li>
+          <a href="#">
+            <svg
+              width="40"
+              height="34"
+              viewBox="0 0 40 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_533_15"
+                style="mask-type: luminance"
+                maskUnits="userSpaceOnUse"
+                x="-1"
+                y="0"
+                width="42"
+                height="34"
+              >
+                <path
+                  d="M20 1C40 1 40 1 40 16.5556C40 32.1111 40 32.1111 20 32.1111C0 32.1111 0 32.1111 0 16.5556C0 1 0 1 20 1Z"
+                  fill="white"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M15.5527 8.77734L28.8861 16.5551L15.5527 24.3329V8.77734Z"
+                  fill="black"
+                />
+              </mask>
+              <g mask="url(#mask0_533_15)">
+                <path d="M40 -3H0V37H40V-3Z" fill="#F3F3F3" />
+              </g>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <svg
+              width="35"
+              height="35"
+              viewBox="0 0 35 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="mask0_533_22"
+                style="mask-type: luminance"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="35"
+                height="35"
+              >
+                <path d="M0 0H35V35H0V0Z" fill="white" />
+              </mask>
+              <g mask="url(#mask0_533_22)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 17.5977C0 26.2996 6.31896 33.5329 14.5833 35V22.3606H10.2083V17.5H14.5833V13.6106C14.5833 9.23563 17.4023 6.80604 21.3894 6.80604C22.6523 6.80604 24.0144 7 25.2773 7.19396V11.6667H23.0417C20.9023 11.6667 20.4167 12.7356 20.4167 14.0977V17.5H25.0833L24.306 22.3606H20.4167V35C28.681 33.5329 35 26.2996 35 17.5977C35 7.91875 27.125 0 17.5 0C7.875 0 0 7.91875 0 17.5977Z"
+                  fill="#F3F3F3"
+                />
+              </g>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <svg
+              width="35"
+              height="32"
+              viewBox="0 0 35 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M27.5625 0H32.93L21.205 13.5536L35 32H24.2L15.735 20.8146L6.06 32H0.6875L13.2275 17.4981L0 0.00252204H11.075L18.715 10.2245L27.5625 0ZM25.675 28.7516H28.65L9.45 3.07945H6.26L25.675 28.7516Z"
+                fill="#F3F3F3"
+              />
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <svg
+              width="37"
+              height="37"
+              viewBox="0 0 37 37"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 16.5556C1 9.22306 1 5.55583 3.27889 3.27889C5.55778 1.00194 9.22306 1 16.5556 1H20.4444C27.7769 1 31.4442 1 33.7211 3.27889C35.9981 5.55778 36 9.22306 36 16.5556V20.4444C36 27.7769 36 31.4442 33.7211 33.7211C31.4422 35.9981 27.7769 36 20.4444 36H16.5556C9.22306 36 5.55583 36 3.27889 33.7211C1.00194 31.4422 1 27.7769 1 20.4444V16.5556Z"
+                stroke="#F3F3F3"
+                stroke-width="2"
+              />
+              <path
+                d="M27.2507 12.6654C28.8615 12.6654 30.1673 11.3595 30.1673 9.7487C30.1673 8.13787 28.8615 6.83203 27.2507 6.83203C25.6398 6.83203 24.334 8.13787 24.334 9.7487C24.334 11.3595 25.6398 12.6654 27.2507 12.6654Z"
+                fill="#F3F3F3"
+              />
+              <path
+                d="M18.4993 24.3346C21.721 24.3346 24.3327 21.723 24.3327 18.5013C24.3327 15.2796 21.721 12.668 18.4993 12.668C15.2777 12.668 12.666 15.2796 12.666 18.5013C12.666 21.723 15.2777 24.3346 18.4993 24.3346Z"
+                stroke="#F3F3F3"
+                stroke-width="2"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <div class="info_wrap">
+        <ul class="info_1">
+          <div class="policy">
+            <li>
+              <a href="#">
+                이용약관
+                <div class="policy_line"></div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                개인정보처리방침
+                <div class="policy_line"></div>
+              </a>
+            </li>
+          </div>
+
+          <li><a href="#">닥터마틴에어웨어코리아(주)</a></li>
+          <li>
+            <a href="#"
+              >주소 : 서울특별시 강남구 도산대로 318 (SB타워) 14층 1,2호</a
+            >
+          </li>
+          <li><a href="#">사업자번호 : 105-81-94802</a></li>
+        </ul>
+
+        <ul class="info_2">
+          <li><a href="#">대표이사 : 챈카키데렉</a></li>
+          <li><a href="#">개인정보관리책임자 : 이태영</a></li>
+          <li><a href="#">E-MAIL_ hello@drmartens.co.kr</a></li>
+          <li><a href="#">통신판매업신고 : 2013-서울마포-1212호</a></li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        All Images and Contents Copyright © 2025 SSS0919 All Rights Reserved.
+      </div>
+
+      <div class="barcode">
+        <a href="../../index.html">
+          <img src="img/footer/barcode.png" alt="barcode" />
+        </a>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    </div>
+
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+
+</html>
